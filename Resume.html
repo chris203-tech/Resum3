@@ -13,30 +13,66 @@
         }
         h1 {
             color: #fff;
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #fff;
         }
         .list-group-item {
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
             color: #333; /* Dark text for readability */
-            font-size: 0.9em; /* Smaller font size for list items */
-            padding: 8px 12px; /* Reduce padding for a more compact look */
+            font-size: 1em;
+            padding: 10px 15px;
         }
         .text-center {
             text-align: center;
         }
         .container {
-            max-width: 800px; /* Reduced container width */
+            max-width: 900px;
         }
         .narrow-list {
-            width: 90%; /* Set list width to 90% */
-            padding-left: 0; /* Remove any padding for better alignment */
-            margin-left: 0; /* Align to the left */
-            height: 700px; /* Set list height to make it longer */
-            overflow: auto; /* Make the list scrollable if too long */
+            width: 100%; /* Adjust to 100% for responsiveness */
+            margin-left: 0;
+            overflow: auto;
         }
         .courses-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: flex-start;
-            gap: 20px; /* Add space between the list and content */
+            gap: 20px;
+        }
+        .profile-img {
+            width: 122px;
+            height: 122px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .section-title {
+            margin-top: 30px;
+        }
+        /* Reduced margin between courses and stuff I like to do */
+        .section-title + .section-title {
+            margin-top: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #fff;
+            font-size: 0.8em;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .list-group-item {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -46,36 +82,46 @@
     <h1 class="text-center">Cristian Baki</h1>
     <p class="text-center">Current Student at UB</p>
   
-    <h1>About Me</h1>
-    <p>
-        <img src="baki.png" alt="Cristian Baki" class="float-left mr-3" style="width: 122px; height: 122px;">
-        My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am committed to developing a solid foundation in IT, with a specific focus on software development, networking, and cybersecurity. My goal is to acquire the technical skills and hands-on experience needed to thrive in the tech industry and make a valuable impact in the field.
-    </p>
+    <div class="section-title">
+        <h2>About Me</h2>
+        <p>
+            <img src="baki.png" alt="Cristian Baki" class="profile-img float-left">
+            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am committed to developing a solid foundation in IT, with a specific focus on software development, networking, and cybersecurity. My goal is to acquire the technical skills and hands-on experience needed to thrive in the tech industry and make a valuable impact in the field.
+        </p>
+    </div>
 
-    <h2>Courses Taken</h2>
-    <div class="courses-container">
-        <ul class="list-group mb-4 narrow-list">
-            <li class="list-group-item">Fundamentals of Computing</li>
-            <li class="list-group-item">Programming</li>
-            <li class="list-group-item">English</li>
-            <li class="list-group-item">Ethics</li>
-            <li class="list-group-item">Intermediate Algebra</li>
-            <li class="list-group-item">Trigonometry</li>
+    <div class="section-title">
+        <h2>Courses Taken</h2>
+        <div class="courses-container">
+            <ul class="list-group mb-4 narrow-list">
+                <li class="list-group-item">Fundamentals of Computing</li>
+                <li class="list-group-item">Programming</li>
+                <li class="list-group-item">English</li>
+                <li class="list-group-item">Ethics</li>
+                <li class="list-group-item">Intermediate Algebra</li>
+                <li class="list-group-item">Trigonometry</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Reduced space between the two sections -->
+    <div class="section-title">
+        <h2>Stuff I Like to Do</h2>
+        <ul style="list-style-type: disc; padding-left: 20px; color: #fff;">
+            <li>Working out</li>
+            <li>Practice MMA</li>
+            <li>Play games</li>
+            <li>Powerlift</li>
+            <li></li>
         </ul>
     </div>
 
-    <!-- New Section: Stuff I Like to Do -->
-    <h2>Stuff I Like to Do</h2>
-    <ul class="list-group mb-4 narrow-list">
-        <li class="list-group-item">Working out</li>
-        <li class="list-group-item">Practicing Mixed Martial Arts</li>
-        <li class="list-group-item">Play games</li>
-        <li class="list-group-item">Powerlifting</li>
-        <li class="list-group-item">UB (University of Belize)</li>
-    </ul>
-
     <p class="text-center">For more information, visit <a href="https://www.ubelearn.com/" class="btn btn-light">UB Learn</a>.</p>
 </div>
+
+<footer>
+    <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

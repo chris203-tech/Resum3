@@ -24,7 +24,11 @@
             text-align: center;
         }
         .container {
-            max-width: 900px; /* Make the container slightly smaller */
+            max-width: 900px; /* Limit overall container width */
+        }
+        .narrow-list {
+            width: 50%; /* Make the list itself narrower (50% width) */
+            margin: 0 auto; /* Center the list horizontally */
         }
     </style>
 </head>
@@ -41,7 +45,7 @@
     </p>
 
     <h2>Courses Taken</h2>
-    <ul class="list-group mb-4">
+    <ul class="list-group mb-4 narrow-list">
         <li class="list-group-item">Fundamentals of Computing</li>
         <li class="list-group-item">Programming</li>
         <li class="list-group-item">English</li>
@@ -58,7 +62,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
 
 
 

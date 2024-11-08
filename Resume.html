@@ -13,7 +13,7 @@
         }
         h1 {
             color: #fff;
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 0.5em;
         }
         h2 {
@@ -63,6 +63,10 @@
             color: #fff;
             font-size: 0.8em;
         }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             h1 {
@@ -87,60 +91,83 @@
 <body>
 
 <div class="container">
+    <!-- Header -->
     <h1 class="text-center">Cristian Baki</h1>
-    <p class="text-center">Current Student at UB | Email: cristian@example.com | LinkedIn: linkedin.com/in/cristianbaki</p>
+    <p class="text-center">Current Student at UB | Email: 2024161736@ub.edu.bz | Phone: 625-7188 | LinkedIn: linkedin.com/in/cristianbaki | GitHub: github.com/cristianbaki</p>
 
+    <!-- About Me Section -->
     <div class="section-title">
         <h2>About Me</h2>
         <p>
             <img src="baki.png" alt="Cristian Baki" class="profile-img float-left">
-            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am committed to developing a solid foundation in IT, with a specific focus on software development, networking, and cybersecurity. My goal is to acquire the technical skills and hands-on experience needed to thrive in the tech industry and make a valuable impact in the field.
+            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am passionate about software development, networking, and cybersecurity, and I’m dedicated to building my skills and knowledge to contribute meaningfully in the tech industry.
         </p>
     </div>
 
+    <!-- Objective Section -->
     <div class="section-title">
-        <h2>Stuff I Like to Do</h2>
-        <ul style="list-style-type: disc; padding-left: 20px; color: #fff;">
-            <li>Working out</li>
-            <li>Practicing Mixed Martial Arts</li>
-            <li>Playing games</li>
-            <li>Powerlifting</li>
+        <h2>Objective</h2>
+        <p>
+            Seeking a challenging internship or entry-level position in IT where I can apply my knowledge in software development, networking, and cybersecurity to solve real-world problems. I am eager to contribute to a team and grow as a professional in a dynamic tech environment.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">
+        <h2>Skills</h2>
+        <p><strong>Programming Languages:</strong> Python, Java, C++, HTML/CSS, JavaScript</p>
+        <p><strong>Software & Tools:</strong> Git, Visual Studio, Docker, SQL, Microsoft Office Suite</p>
+        <p><strong>Soft Skills:</strong> Teamwork, Problem-solving, Communication, Time Management</p>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-title">
+        <h2>Experience</h2>
+        <ul class="list-group mb-4 narrow-list">
+            <li class="list-group-item"><strong>IT Intern</strong> - University of Belize, Jan 2023 - Present
+                <ul>
+                    <li>Assisted in maintaining the university’s network and ensuring uptime for students and faculty.</li>
+                    <li>Provided tech support for faculty and students, troubleshooting hardware and software issues.</li>
+                </ul>
+            </li>
+            <li class="list-group-item"><strong>Freelance Web Developer</strong>, Aug 2022 - Dec 2022
+                <ul>
+                    <li>Developed websites using HTML, CSS, and JavaScript for small businesses.</li>
+                    <li>Created user-friendly interfaces and optimized website performance.</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
-    <div class="section-title">
-        <h2>Courses Taken</h2>
-        <div class="courses-container">
-            <ul class="list-group mb-4 narrow-list">
-                <li class="list-group-item">Fundamentals of Computing</li>
-                <li class="list-group-item">Programming</li>
-                <li class="list-group-item">English</li>
-                <li class="list-group-item">Ethics</li>
-                <li class="list-group-item">Intermediate Algebra</li>
-                <li class="list-group-item">Trigonometry</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Add Projects or Experience here if applicable -->
+    <!-- Projects Section -->
     <div class="section-title">
         <h2>Projects</h2>
         <ul class="list-group mb-4 narrow-list">
-            <li class="list-group-item"><strong>Portfolio Website</strong> - Built a personal website using HTML, CSS, and JavaScript. Implemented responsive design.</li>
-            <li class="list-group-item"><strong>Inventory Management System</strong> - Created a Python-based inventory system with a database backend using SQLite.</li>
+            <li class="list-group-item"><strong>Portfolio Website</strong> - Built using HTML, CSS, and JavaScript. Implemented responsive design and hosting on GitHub Pages.</li>
+            <li class="list-group-item"><strong>Inventory Management System</strong> - Created with Python and SQLite, this project allows businesses to manage their inventory efficiently.</li>
+            <li class="list-group-item"><strong>Network Security Tools</strong> - Developed a set of network security tools in Python to scan and secure local networks.</li>
         </ul>
     </div>
 
-    <p class="text-center">For more information, visit <a href="https://www.ubelearn.com/" class="btn btn-light">UB Learn</a>.</p>
-</div>
+    <!-- Education Section -->
+    <div class="section-title">
+        <h2>Education</h2>
+        <p><strong>Associate's Degree in Information Technology</strong> - University of Belize, Expected Graduation: 2025</p>
+        <p><strong>Relevant Courses:</strong> Programming, Networking Fundamentals, Cybersecurity, Ethics, Trigonometry, Algebra</p>
+    </div>
 
-<footer>
-    <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
-</footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
+        <p><a href="mailto:2024161736@ub.edu.bz">Email me</a> | <a href="https://www.linkedin.com/in/cristianbaki" target="_blank">LinkedIn</a> | <a href="https://github.com/cristianbaki" target="_blank">GitHub</a></p>
+    </footer>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 

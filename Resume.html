@@ -12,6 +12,15 @@
             color: white; /* Text color should contrast the background */
         }
 
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #e0f7fa; /* Light blue background for the content container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for content */
+        }
+
         h1 {
             color: #6a0dad; /* Purple color for the name */
             font-size: 2.5em;
@@ -74,84 +83,94 @@
 </head>
 <body>
 
-<!-- Header -->
-<h1 class="text-center">Cristian Baki</h1>
-<p class="text-center">Current Student at UB | Email: 2024161736@ub.edu.bz | Phone: 625-7188 | LinkedIn: linkedin.com/in/cristianbaki | GitHub: github.com/cristianbaki</p>
+<!-- Start of the container -->
+<div class="container">
+    <!-- Header -->
+    <h1 class="text-center">Cristian Baki</h1>
+    <p class="text-center">Current Student at UB | Email: 2024161736@ub.edu.bz | Phone: 625-7188 | LinkedIn: linkedin.com/in/cristianbaki | GitHub: github.com/cristianbaki</p>
 
-<!-- About Me Section -->
-<div class="section-title">
-    <h2>About Me</h2>
-    <p>
-        <img src="baki.png" alt="Cristian Baki" class="profile-img float-left">
-        My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am passionate about software development, networking, and cybersecurity, and I’m dedicated to building my skills and knowledge to contribute meaningfully in the tech industry.
-    </p>
+    <!-- About Me Section -->
+    <div class="section-title">
+        <h2>About Me</h2>
+        <p>
+            <img src="baki.png" alt="Cristian Baki" class="profile-img float-left">
+            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am passionate about software development, networking, and cybersecurity, and I’m dedicated to building my skills and knowledge to contribute meaningfully in the tech industry.
+        </p>
+    </div>
+
+    <!-- Stuff I Like to Do Section -->
+    <div class="section-title">
+        <h2>Stuff I Like to Do</h2>
+        <ul style="list-style-type: disc; padding-left: 20px; color: #6a0dad;">
+            <li>Working out</li>
+            <li>Practicing Mixed Martial Arts</li>
+            <li>Playing games</li>
+            <li>Powerlifting</li>
+        </ul>
+    </div>
+
+    <!-- Courses Taken Section -->
+    <div class="section-title">
+        <h2>Courses Taken</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fundamentals of Computing</td>
+                    <td>An introduction to the basic principles of computer science and information technology.</td>
+                </tr>
+                <tr>
+                    <td>Programming</td>
+                    <td>A hands-on course focusing on software development using languages such as Python, Java, and C++.</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>A course focused on improving language skills, including reading, writing, and grammar.</td>
+                </tr>
+                <tr>
+                    <td>Ethics</td>
+                    <td>A study of ethical issues in technology, including privacy, data security, and the societal impact of tech.</td>
+                </tr>
+                <tr>
+                    <td>Intermediate Algebra</td>
+                    <td>A mathematical course covering key algebraic concepts like polynomials, equations, and functions.</td>
+                </tr>
+                <tr>
+                    <td>Trigonometry</td>
+                    <td>An exploration of trigonometric functions and their applications in solving geometric problems.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">
+        <h2>Skills</h2>
+        <p><strong>Programming Languages:</strong> Python, Java, C++, HTML/CSS, JavaScript</p>
+        <p><strong>Software & Tools:</strong> Git, Visual Studio, Docker, SQL, Microsoft Office Suite</p>
+        <p><strong>Soft Skills:</strong> Teamwork, Problem-solving, Communication, Time Management</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section-title">
+        <h2>Education</h2>
+        <p><strong>Associate's Degree in Information Technology</strong> - University of Belize, Expected Graduation: 2025</p>
+        <p><strong>Relevant Courses:</strong> Programming, Networking Fundamentals, Cybersecurity, Ethics, Trigonometry, Algebra</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
+        <p><a href="mailto:2024161736@ub.edu.bz">Email me</a> | <a href="https://www.linkedin.com/in/cristianbaki" target="_blank">LinkedIn</a> | <a href="https://github.com/cristianbaki" target="_blank">GitHub</a></p>
+    </footer>
+
 </div>
-
-<!-- Stuff I Like to Do Section -->
-<div class="section-title">
-    <h2>Stuff I Like to Do</h2>
-    <ul style="list-style-type: disc; padding-left: 20px; color: #6a0dad;">
-        <li>Working out</li>
-        <li>Practicing Mixed Martial Arts</li>
-        <li>Playing games</li>
-        <li>Powerlifting</li>
-    </ul>
-</div>
-
-<!-- Courses Taken Section -->
-<div class="section-title">
-    <h2>Courses Taken</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fundamentals of Computing</td>
-                <td>An introduction to the basic principles of computer science and information technology.</td>
-            </tr>
-            <tr>
-                <td>Programming</td>
-                <td>A hands-on course focusing on software development using languages such as Python, Java, and C++.</td>
-            </tr>
-            <tr>
-                <td>English</td>
-                <td>A course focused on improving language skills, including reading, writing, and grammar.</td>
-            </tr>
-            <tr>
-                <td>Ethics</td>
-                <td>A study of ethical issues in technology, including privacy, data security, and the societal impact of tech.</td>
-            </tr>
-            <tr>
-                <td>Intermediate Algebra</td>
-                <td>A mathematical course covering key algebraic concepts like polynomials, equations, and functions.</td>
-            </tr>
-            <tr>
-                <td>Trigonometry</td>
-                <td>An exploration of trigonometric functions and their applications in solving geometric problems.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- Skills Section -->
-<div class="section-title">
-    <h2>Skills</h2>
-    <p><strong>Programming Languages:</strong> Python, Java, C++, HTML/CSS, JavaScript</p>
-    <p><strong>Software & Tools:</strong> Git, Visual Studio, Docker, SQL, Microsoft Office Suite</p>
-    <p><strong>Soft Skills:</strong> Teamwork, Problem-solving, Communication, Time Management</p>
-</div>
-
-
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
-    <p><a href="mailto:2024161736@ub.edu.bz">Email me</a> | <a href="https://www.linkedin.com/in/cristianbaki" target="_blank">LinkedIn</a> | <a href="https://github.com/cristianbaki" target="_blank">GitHub</a></p>
-</footer>
+<!-- End of the container -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -159,6 +178,7 @@
 
 </body>
 </html>
+
 
 
 

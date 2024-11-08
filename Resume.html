@@ -28,8 +28,14 @@
         }
         .narrow-list {
             width: 30%; /* Set list width to 30% */
-            padding-left: 0; /* Remove any left padding for alignment */
-            margin-left: 0; /* Align it to the left */
+            padding-left: 0; /* Remove any padding for better alignment */
+            margin-left: 0; /* Align to the left */
+        }
+        /* Ensure that the list is on the left, but not fully against the edge */
+        .courses-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px; /* Add space between the list and content */
         }
     </style>
 </head>
@@ -46,14 +52,18 @@
     </p>
 
     <h2>Courses Taken</h2> <!-- Heading remains centered -->
-    <ul class="list-group mb-4 narrow-list">
-        <li class="list-group-item">Fundamentals of Computing</li>
-        <li class="list-group-item">Programming</li>
-        <li class="list-group-item">English</li>
-        <li class="list-group-item">Ethics</li>
-        <li class="list-group-item">Intermediate Algebra</li>
-        <li class="list-group-item">Trigonometry</li>
-    </ul>
+    
+    <!-- Add this new container for aligning list -->
+    <div class="courses-container">
+        <ul class="list-group mb-4 narrow-list">
+            <li class="list-group-item">Fundamentals of Computing</li>
+            <li class="list-group-item">Programming</li>
+            <li class="list-group-item">English</li>
+            <li class="list-group-item">Ethics</li>
+            <li class="list-group-item">Intermediate Algebra</li>
+            <li class="list-group-item">Trigonometry</li>
+        </ul>
+    </div>
 
     <p class="text-center">For more information, visit <a href="https://www.ubelearn.com/" class="btn btn-light">UB Learn</a>.</p>
 </div>
@@ -63,6 +73,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 

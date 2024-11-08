@@ -9,60 +9,59 @@
         body {
             background: linear-gradient(135deg, #6a0dad, #ffeb3b); /* Purple to Yellow gradient */
             padding: 20px;
-            color: white; /* Text color should contrast the background */
+            color: white;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for content */
-        }
-
         h1 {
-            color: #6a0dad; /* Purple color for the name */
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
+            color: #fff;
+            font-size: 2em;
         }
-
         h2 {
             font-size: 1.5em;
             margin-top: 20px;
-            color: #6a0dad;
+            color: #fff;
         }
-
         .list-group-item {
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            color: #333;
+            color: #333; /* Dark text for readability */
             font-size: 1em;
             padding: 10px 15px;
         }
-
         .text-center {
             text-align: center;
         }
-
+        .container {
+            max-width: 900px;
+        }
+        .narrow-list {
+            width: 100%; /* Adjust to 100% for responsiveness */
+            margin-left: 0;
+            overflow: auto;
+        }
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+        }
         .profile-img {
             width: 122px;
             height: 122px;
             border-radius: 50%;
             margin-right: 15px;
         }
-
+        .section-title {
+            margin-top: 30px;
+        }
+        /* Reduced margin between courses and stuff I like to do */
+        .section-title + .section-title {
+            margin-top: 15px;
+        }
         footer {
             text-align: center;
             margin-top: 30px;
-            color: #6a0dad;
+            color: #fff;
             font-size: 0.8em;
         }
-
-        footer a {
-            color: #6a0dad;
-            text-decoration: underline;
-        }
-
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             h1 {
@@ -74,110 +73,60 @@
             .list-group-item {
                 font-size: 0.9em;
             }
-            .profile-img {
-                width: 100px;
-                height: 100px;
-            }
         }
     </style>
 </head>
 <body>
 
-<!-- Start of the container -->
 <div class="container">
-    <!-- Header -->
     <h1 class="text-center">Cristian Baki</h1>
-    <p class="text-center">Current Student at UB | Email: 2024161736@ub.edu.bz | Phone: 625-7188 | LinkedIn: linkedin.com/in/cristianbaki | GitHub: github.com/cristianbaki</p>
-
-    <!-- About Me Section -->
+    <p class="text-center">Current Student at UB</p>
+  
     <div class="section-title">
         <h2>About Me</h2>
         <p>
             <img src="baki.png" alt="Cristian Baki" class="profile-img float-left">
-            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am passionate about software development, networking, and cybersecurity, and I’m dedicated to building my skills and knowledge to contribute meaningfully in the tech industry.
+            My name is Cristian Baki, and I am currently working toward an Associate's Degree in Information Technology at the University of Belize. I am committed to developing a solid foundation in IT, with a specific focus on software development, networking, and cybersecurity. My goal is to acquire the technical skills and hands-on experience needed to thrive in the tech industry and make a valuable impact in the field.
         </p>
     </div>
 
-    <!-- Stuff I Like to Do Section -->
+    <!-- Moved 'Stuff I Like to Do' section before 'Courses Taken' -->
     <div class="section-title">
         <h2>Stuff I Like to Do</h2>
-        <ul style="list-style-type: disc; padding-left: 20px; color: #6a0dad;">
+        <ul style="list-style-type: disc; padding-left: 20px; color: #fff;">
             <li>Working out</li>
             <li>Practicing Mixed Martial Arts</li>
-            <li>Playing games</li>
+            <li>Play games</li>
             <li>Powerlifting</li>
         </ul>
     </div>
 
-    <!-- Courses Taken Section -->
     <div class="section-title">
         <h2>Courses Taken</h2>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Fundamentals of Computing</td>
-                    <td>An introduction to the basic principles of computer science and information technology.</td>
-                </tr>
-                <tr>
-                    <td>Programming</td>
-                    <td>A hands-on course focusing on software development using languages such as Python, Java, and C++.</td>
-                </tr>
-                <tr>
-                    <td>English</td>
-                    <td>A course focused on improving language skills, including reading, writing, and grammar.</td>
-                </tr>
-                <tr>
-                    <td>Ethics</td>
-                    <td>A study of ethical issues in technology, including privacy, data security, and the societal impact of tech.</td>
-                </tr>
-                <tr>
-                    <td>Intermediate Algebra</td>
-                    <td>A mathematical course covering key algebraic concepts like polynomials, equations, and functions.</td>
-                </tr>
-                <tr>
-                    <td>Trigonometry</td>
-                    <td>An exploration of trigonometric functions and their applications in solving geometric problems.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="courses-container">
+            <ul class="list-group mb-4 narrow-list">
+                <li class="list-group-item">Fundamentals of Computing</li>
+                <li class="list-group-item">Programming</li>
+                <li class="list-group-item">English</li>
+                <li class="list-group-item">Ethics</li>
+                <li class="list-group-item">Intermediate Algebra</li>
+                <li class="list-group-item">Trigonometry</li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Skills Section -->
-    <div class="section-title">
-        <h2>Skills</h2>
-        <p><strong>Programming Languages:</strong> Python, Java, C++, HTML/CSS, JavaScript</p>
-        <p><strong>Software & Tools:</strong> Git, Visual Studio, Docker, SQL, Microsoft Office Suite</p>
-        <p><strong>Soft Skills:</strong> Teamwork, Problem-solving, Communication, Time Management</p>
-    </div>
-
-    <!-- Education Section -->
-    <div class="section-title">
-        <h2>Education</h2>
-        <p><strong>Associate's Degree in Information Technology</strong> - University of Belize, Expected Graduation: 2025</p>
-        <p><strong>Relevant Courses:</strong> Programming, Networking Fundamentals, Cybersecurity, Ethics, Trigonometry, Algebra</p>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
-        <p><a href="mailto:2024161736@ub.edu.bz">Email me</a> | <a href="https://www.linkedin.com/in/cristianbaki" target="_blank">LinkedIn</a> | <a href="https://github.com/cristianbaki" target="_blank">GitHub</a></p>
-    </footer>
-
+    <p class="text-center">For more information, visit <a href="https://www.ubelearn.com/" class="btn btn-light">UB Learn</a>.</p>
 </div>
-<!-- End of the container -->
+
+<footer>
+    <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
-</html>
+</html> 
 
 
 

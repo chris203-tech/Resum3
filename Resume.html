@@ -14,6 +14,7 @@
         h1 {
             color: #fff;
             font-size: 2em;
+            margin-bottom: 0.5em;
         }
         h2 {
             font-size: 1.5em;
@@ -22,7 +23,7 @@
         }
         .list-group-item {
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            color: #333; /* Dark text for readability */
+            color: #333;
             font-size: 1em;
             padding: 10px 15px;
         }
@@ -31,9 +32,10 @@
         }
         .container {
             max-width: 900px;
+            margin: 0 auto;
         }
         .narrow-list {
-            width: 100%; /* Adjust to 100% for responsiveness */
+            width: 100%;
             margin-left: 0;
             overflow: auto;
         }
@@ -52,7 +54,6 @@
         .section-title {
             margin-top: 30px;
         }
-        /* Reduced margin between courses and stuff I like to do */
         .section-title + .section-title {
             margin-top: 15px;
         }
@@ -73,6 +74,13 @@
             .list-group-item {
                 font-size: 0.9em;
             }
+            .courses-container {
+                flex-direction: column;
+            }
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
         }
     </style>
 </head>
@@ -80,8 +88,8 @@
 
 <div class="container">
     <h1 class="text-center">Cristian Baki</h1>
-    <p class="text-center">Current Student at UB</p>
-  
+    <p class="text-center">Current Student at UB | Email: cristian@example.com | LinkedIn: linkedin.com/in/cristianbaki</p>
+
     <div class="section-title">
         <h2>About Me</h2>
         <p>
@@ -90,7 +98,6 @@
         </p>
     </div>
 
-    <!-- Moved 'Stuff I Like to Do' section before 'Courses Taken' -->
     <div class="section-title">
         <h2>Stuff I Like to Do</h2>
         <ul style="list-style-type: disc; padding-left: 20px; color: #fff;">
@@ -113,6 +120,15 @@
                 <li class="list-group-item">Trigonometry</li>
             </ul>
         </div>
+    </div>
+
+    <!-- Add Projects or Experience here if applicable -->
+    <div class="section-title">
+        <h2>Projects</h2>
+        <ul class="list-group mb-4 narrow-list">
+            <li class="list-group-item"><strong>Portfolio Website</strong> - Built a personal website using HTML, CSS, and JavaScript. Implemented responsive design.</li>
+            <li class="list-group-item"><strong>Inventory Management System</strong> - Created a Python-based inventory system with a database backend using SQLite.</li>
+        </ul>
     </div>
 
     <p class="text-center">For more information, visit <a href="https://www.ubelearn.com/" class="btn btn-light">UB Learn</a>.</p>

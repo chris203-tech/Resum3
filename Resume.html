@@ -11,65 +11,77 @@
             padding: 20px;
             color: white;
         }
+
         h1 {
             color: #fff;
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
         }
+
         h2 {
             font-size: 1.5em;
             margin-top: 20px;
             color: #fff;
         }
+
+        .container {
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.9); /* Lighter white background for content */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .profile-img {
+            width: 122px;
+            height: 122px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #fff; /* White border for profile image */
+        }
+
         .list-group-item {
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
             color: #333; /* Dark text for readability */
             font-size: 1em;
             padding: 10px 15px;
         }
-        .text-center {
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-        }
-        .narrow-list {
-            width: 100%; /* Adjust to 100% for responsiveness */
-            margin-left: 0;
-            overflow: auto;
-        }
-        .courses-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 20px;
-        }
-        .profile-img {
-            width: 122px;
-            height: 122px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
+
         .section-title {
             margin-top: 30px;
         }
-        /* Reduced margin between courses and stuff I like to do */
-        .section-title + .section-title {
-            margin-top: 15px;
-        }
+
         footer {
             text-align: center;
             margin-top: 30px;
+            padding: 10px 0;
             color: #fff;
-            font-size: 0.8em;
+            font-size: 0.9em;
+            background-color: #6a0dad; /* Purple footer */
+            border-radius: 5px;
         }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: underline;
+        }
+
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.6em;
+                font-size: 2em;
             }
+
             h2 {
                 font-size: 1.3em;
             }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+
             .list-group-item {
                 font-size: 0.9em;
             }
@@ -90,17 +102,37 @@
         </p>
     </div>
 
-    <!-- Moved 'Stuff I Like to Do' section before 'Courses Taken' -->
+    <!-- Stuff I Like to Do Section -->
     <div class="section-title">
         <h2>Stuff I Like to Do</h2>
         <ul style="list-style-type: disc; padding-left: 20px; color: #fff;">
             <li>Working out</li>
             <li>Practicing Mixed Martial Arts</li>
-            <li>Play games</li>
+            <li>Playing games</li>
             <li>Powerlifting</li>
         </ul>
     </div>
 
+    <!-- Education Section -->
+    <div class="section-title">
+        <h2>Education</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item"><strong>Associate's Degree in Information Technology</strong> - University of Belize (Expected Graduation: 2025)</li>
+            <li class="list-group-item"><strong>Relevant Courses:</strong> Programming, Networking Fundamentals, Cybersecurity, Ethics, Trigonometry, Algebra</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">
+        <h2>Skills</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item"><strong>Programming Languages:</strong> Python, Java, C++, HTML/CSS, JavaScript</li>
+            <li class="list-group-item"><strong>Software & Tools:</strong> Git, Visual Studio, Docker, SQL, Microsoft Office Suite</li>
+            <li class="list-group-item"><strong>Soft Skills:</strong> Teamwork, Problem-solving, Communication, Time Management</li>
+        </ul>
+    </div>
+
+    <!-- Courses Taken Section -->
     <div class="section-title">
         <h2>Courses Taken</h2>
         <div class="courses-container">
@@ -120,13 +152,18 @@
 
 <footer>
     <p>&copy; 2024 Cristian Baki | All Rights Reserved</p>
+    <p><a href="mailto:2024161736@ub.edu.bz">Email me</a> | <a href="https://www.linkedin.com/in/cristianbaki" target="_blank">LinkedIn</a> | <a href="https://github.com/cristianbaki" target="_blank">GitHub</a></p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
-</html> 
+</html>
+
+
+
 
 
 
